@@ -1,0 +1,239 @@
+/* Body styles */
+body {
+    background: linear-gradient(135deg, #4A90E2, #34495E);
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+h1 {
+    margin-top: 40px;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+#running {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+#gamepads {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Gamepad Container */
+#gamepads > * {
+    background: rgba(223, 5, 5, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+}
+
+/* Hover effect */
+#gamepads > *:hover {
+    transform: translateY(-5px);
+}
+
+#gamepads pre {
+    white-space: pre-wrap;
+    color: #D5D5D5;
+}
+
+/* Head */
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.head .id {
+    flex: 1 1 auto;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.head .index,
+.head .id {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5em;
+    border-radius: 8px;
+}
+
+/* Info section */
+.info .label {
+    width: 7em;
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+}
+
+.info > div {
+    padding: 0.25em;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0.25em 0.25em 0 0;
+    border-radius: 8px;
+}
+
+/* Inputs */
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Axes and Buttons */
+.axes, .buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.axes div, .buttons div {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.axes div:hover, .buttons div:hover {
+    transform: scale(1.1);
+}
+
+/* SVG Styling */
+.svg text {
+    color: #CCC;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.axes svg text {
+    font-size: 0.6px;
+}
+
+.buttons svg text {
+    font-size: 1.2px;
+}
+
+.axes > div,
+.buttons > div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+.axes > div {
+    margin: 2px 5px 0 0;
+}
+
+.buttons > div {
+    margin: 2px 2px 0 0;
+}
+
+/* SVG circle transitions for buttons */
+circle.button {
+    transition: fill 0.2s ease, r 0.2s ease;
+}
+
+/* Status text */
+#running {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: red; /* Default color for disconnected */
+}
+
+/* Connected class */
+.connected {
+    color: green;
+}
+
+/* Disconnected class */
+.disconnected {
+    color: red;
+}
+
+body {
+    background: #171f27;
+    color: white;
+    font-family: monospace;
+}
+#gamepads>* {
+    background: #333;
+    padding: 1em;
+    margin: 10px 5px 0 0;
+}
+#gamepads pre {
+    white-space: pre-wrap;
+}
+.head {
+    display: flex;
+}
+.head .id {
+    flex: 1 1 auto;
+}
+.head .index,
+.head .id {
+    display: inline-block;
+    background: #222;
+    padding: 0.5em;
+}
+
+.info .label {
+    width: 7em;
+    display: inline-block;
+}
+.info>div {
+    padding: 0.25em;
+    background: #222;
+    margin: 0.25em 0.25em 0 0;
+}
+.inputs {
+    display: flex;
+}
+.axes {
+    display: flex;
+    align-items: flex-start;
+}
+.svg text {
+    color: #CCC;
+    font-family: monospace;
+}
+.axes svg text {
+    font-size: 0.6px;
+}
+.buttons svg text {
+    font-size: 1.2px;
+}
+.axes>div, .buttons>div {
+    display: inline-block;
+    background: #222;
+}
+.axes>div {
+    margin: 2px 5px 0 0;
+}
+.buttons>div {
+    margin: 2px 2px 0 0;
+}
+#status {
+    margin: 10px 0;
+}
+#dpad {
+    margin-top: 20px;
+}
+#dpad-output {
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+.dpad-direction {
+    margin: 5px 0;
+}
+
